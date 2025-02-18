@@ -1,0 +1,55 @@
+
+{
+  "skills": [
+    {
+      "id": "1",
+      "src": "./img/product-chain-1.png",
+      "title": "Front-End",
+      "description": "Developing user interfaces using HTML, CSS, and JavaScript ensuring a seamless, responsive, and visually appealing experience. It also includes proficiency with modern frameworks like React, Next."
+    },
+    {
+      "id": "2",
+      "src": "./img/backend.png",
+      "title": "Back-End",
+      "description": "Building server-side applications using frameworks like Node.js and Spring frameworks, along with designing and implementing microservices for scalable, efficient and reliable systems."
+    },
+    {
+      "id": "3",
+      "src": "./img/database.jpg",
+      "title": "DataBase",
+      "description": "Working with databases, both relational (like MySQL, PostgreSQL) and NoSQL (like MongoDB), to efficiently store, retrieve, analyze, update, manage, and optimize data in applications."
+    },
+    {
+      "id": "4",
+      "src": "./img/devops.png",
+      "title": "Devops",
+      "description": "Automating and streamlining development, testing, and deployment using tools like Docker, Kubernetes, and Jenkins for efficient, scalable and reliable software delivery."
+    },
+    {
+      "id": "5",
+      "src": "./img/cloud.png",
+      "title": "Cloud",
+      "description": "Working with cloud platforms like AWS and Azure to design and manage scalable, secure applications. Utilizing services for compute, storage, networking, and databases with monitoring solutions."
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "title": "LoanFlow ",
+      "description": "At PNC Bank, I contributed to the Loan Management platform, designed to streamline the entire loan lifecycle from application processing to repayment tracking. The system automated loan approvals, interest calculations, and payment scheduling while providing real-time updates on loan statuses. It aimed to enhance efficiency, reduce manual errors, and improve the customer experience."
+      
+    },
+    {
+      "id": "2",
+      "title": "FiTrack",
+      "description": "Developed a financial tracking system designed to streamline the monitoring and management of income, expenses, and budgets. The system provided real-time insights into financial transactions, enabling users to generate detailed reports and forecasts for better decision-making. It aimed to enhance financial transparency, accuracy, and efficiency for individuals or organizations."
+    },
+    {
+      "id": "3",
+      "title": "HealthCare Platform",
+      "description": "Designed and developed an intelligent application focused on optimizing the allocation, utilization, and tracking of hospital resources such as staff, equipment, and supplies. The innovative solution streamlined resource management, ensuring efficient operations and improved productivity. It provided real-time monitoring and data-driven insights to enhance decision-making in healthcare facilities"
+    }
+  ]
+  
+
+}
