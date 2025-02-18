@@ -1,8 +1,9 @@
-import { FaReact, FaAws, FaNode,FaJava,FaGithub } from "react-icons/fa";
+import { FaReact, FaAws, FaNode, FaJava,FaGithub } from "react-icons/fa";
 import { SiSpring,SiRedux,SiGitlab } from "react-icons/si";
 import { VscAzure } from "react-icons/vsc"
 import { DiMongodb,DiMysql} from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
+
 
 const Technologies = [
   { icon: <FaReact />, name: "React.js" },
@@ -19,7 +20,6 @@ const Technologies = [
   { icon: <SiGitlab />, name: "GitLab" },
   
 ];
-
 
 export default function Skills() {
   return (
