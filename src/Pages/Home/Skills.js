@@ -4,7 +4,7 @@ import { VscAzure } from "react-icons/vsc"
 import { DiMongodb,DiMysql} from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
 
-
+import { useState, useEffect } from "react";
 const Technologies = [
   { icon: <FaReact />, name: "React.js" },
   { icon: <SiRedux />, name: "Redux" },
@@ -22,6 +22,24 @@ const Technologies = [
 ];
 
 export default function Skills() {
+  const [columns, setColumns] = useState(5);
+
+  useEffect(() => {
+    const updateColumns = () => {
+      if (window.innerWidth < 600) {
+        setColumns(2);
+      } else if (window.innerWidth < 900) {
+        setColumns(3);
+      } else {
+        setColumns(5);
+      }
+    };
+
+    updateColumns();
+    window.addEventListener("resize", updateColumns);
+    return () => window.removeEventListener("resize", updateColumns);
+  }, []);
+
   return (
     <section className="testimonial--section" id="testimonial">
       <div className="portfolio--container-box">
@@ -29,7 +47,17 @@ export default function Skills() {
           <h2 className="sections--heading">Technologies</h2>
         </div>
       </div>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)',gap:"10px",textAlign:"center", alignItems: 'center',justifyContent:"center" }}>
+      {/* <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)',gap:"10px",textAlign:"center", alignItems: 'center',justifyContent:"center" }}> */}
+      <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: `repeat(${columns}, 1fr)`,
+        gap: "10px",
+        textAlign: "center",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
         {Technologies?.map((item, index) => (
           <div key={index} className="testimonial--section--card">
             <div className="testimonial--section--card--author--detail">
